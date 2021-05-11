@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de un Formulario</title>
+	<style>
+		body {
+			font-family:Times New Roman;
+			font-size:16px;
+		}
+		h1 {
+			color:blue;
+			background:#4DD0E1;
+			font-size:24px;
+			border:1px solid black;
+		}
+		h2 {
+			color:purple;
+			font-size:20px;
+		}
+		#contenedor {
+			margin:0 auto;
+			width:800px;
+			text-align:center;
+		}
+		#menu {
+			background-color:#4DD0E1;
+			float:left;
+			width:800px;
+		}
+		#pie {
+			margin:0 auto;
+			width:800px;
+			text-align:center;
+		}
+	</style> 
+</head>
+<body>
+  <div id="contenedor">
+	<form action="procesar-datos.php" method="post">
+		<fieldset>
+		<h1>Examen de Danza</h1> 
+		<label for="nombre-usuario"><mark>Nombre del Alumno:</mark></label>
+			<input type="text" name="alumnno" id="nombre-usuario">
+			<br><br>
+			<label><mark>Grado y Grupo:</mark> <input type="text, number" name="grupo"></label>
+			<br><br>
+			<label><mark>Correo Electrónico:</mark> <input type="text, number" name="correo"></label>
+			<br><br>
+		<input type="submit" value="Enviar-datos">
+		</fieldset>
+
+	<div id="menu">
+		<br>
+		¿Qué es Danza?
+		<br>
+		<input type="text">
+		<br><br>
+		¿Cuál es el material básico que utiliza la Danza para expresarse?
+		<br>
+		<select name="lista de selección">
+			<option value="opcion1">a)Los pies.</option>
+			<option value="opcion2">b)El cuerpo.</option>
+			<option value="opcion3">b)Las manos.</option>
+		</select>
+		<br><br>
+		¿Qué expresa la Danza?
+		<br>
+		<input type="text">
+		<br><br>
+		¿Cuáles son los objetivos de realizar un calentamiento?
+			<br>
+			<textarea name="area_de_texto" rows="3" cols="50">(Se pueden escribir varias líneas de texto.)</textarea>
+		<br><br>
+		¿Qué es una <i>Coreografía</i>?
+		<br>
+		<input type="text">
+		<br><br>
+		Nombre de un bailarín famoso:
+			<br>
+		<select name="lista de selección">
+			<option value="opcion1">a)Amalia Hernández.</option>
+			<option value="opcion2">b)Donovan Carrillo.</option>
+			<option value="opcion3">b)Arturo Reyes Sandoval.</option>
+		</select>
+		<br><br>
+		¿Cuáles son los 3 tipos de Danza?
+		<br>
+		<input type="text">
+		<br><br>
+		Elementos que conforman la danza:
+			<br>
+			<textarea name="area_de_texto" rows="3" cols="50">(Se pueden escribir varias líneas de texto.)</textarea>
+		<br><br>
+	</div>
+
+	<div id="pie">
+		<fieldset>
+		<h2>Comentarios adicionales:</h2>
+		<textarea name="ardt" rows="3" cols="50">*Si presentó algún inconveniente, favor de escribir en este espacio su problema de manera clara y rápida.</textarea> 
+		</fieldset>
+		<br>
+	</div>
+		<fieldset>
+		<legend>Agrupación de botones:</legend>
+		<button type="reset">Resetear</button>
+		<button type="submit">Enviar</button>
+		</fieldset>
+		<br>
+	</form>
+</body>
+</html>
